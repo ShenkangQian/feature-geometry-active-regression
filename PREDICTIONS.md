@@ -6,6 +6,8 @@ recorded run and by hand where a rule is not mechanical; the prediction text
 is not edited after the run. Rules used to fill the column are stated next to
 each prediction so that a reader can recompute the verdict.
 
+The table below preserves the original empty result cells. Recorded verdicts are in the [completed scorecard](results/sweep-20260924/mechanism/scorecard.md).
+
 Notation. r is the configured translation-to-width ratio of the `shift_r*`
 groups: both peaks sit at +-(0.52 + r * 0.10) with width 0.10, so r = 0 is the
 edge of the training centre range and r = 4 places the peaks 0.4 outside it.
