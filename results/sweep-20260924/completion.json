@@ -1,0 +1,31 @@
+{
+  "status": "complete",
+  "metric_rows": 86400,
+  "test_tasks": 720,
+  "elapsed_seconds": 4129.4586805829895,
+  "methods": [
+    "fixed",
+    "full",
+    "position",
+    "width",
+    "point",
+    "linearized",
+    "linearized_prior",
+    "gp",
+    "gp_basis",
+    "oracle_z",
+    "full_cheap",
+    "full_rich",
+    "random",
+    "fixed_random",
+    "gp_random"
+  ],
+  "external_baselines_not_reproduced": [
+    "ALPaCA original",
+    "LUMA",
+    "ADKF-IFT",
+    "Neural Processes",
+    "AAA",
+    "vector fitting"
+  ]
+}
