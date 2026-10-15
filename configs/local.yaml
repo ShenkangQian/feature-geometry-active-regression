@@ -1,0 +1,44 @@
+seeds: [7, 19]
+families: [pulse, chain]
+methods: [fixed, full, position, width, point, linearized, gp, random]
+threads: 2
+noise_std: 0.035
+model:
+  hidden: 12
+  position_dim: 2
+  width_dim: 2
+data:
+  train_tasks: 32
+  validation_tasks: 6
+  test_tasks: 3
+  groups:
+    pulse: [id, shift, lorentz]
+    chain: [id, shift]
+training:
+  epochs: 32
+  batch_tasks: 2
+  contexts: 8
+  queries: 10
+  lr: 0.006
+  inner_steps: 3
+  inner_lr: 0.2
+  inner_samples: 3
+  query_particles: 4
+  validate_every: 8
+  validation_episodes: 3
+  gp_epochs: 40
+inference:
+  steps: 10
+  lr: 0.2
+  samples: 5
+  particles: 8
+evaluation:
+  pool_points: 49
+  integration_points: 24
+  test_points: 97
+  initial_queries: 4
+  additional_queries: 6
+  exploration: 0.2
+  acquisition: moment
+  fantasies: 16
+

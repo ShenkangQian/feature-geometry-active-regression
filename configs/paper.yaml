@@ -1,0 +1,45 @@
+# Larger, implemented route. Not evidence that these experiments have run.
+seeds: [7, 19, 31, 43, 59]
+families: [pulse, chain]
+methods: [fixed, full, position, width, point, no_readout_variance, linearized, gp, random]
+threads: 2
+noise_std: 0.035
+model:
+  hidden: 24
+  position_dim: 2
+  width_dim: 2
+data:
+  train_tasks: 128
+  validation_tasks: 24
+  test_tasks: 20
+  groups:
+    pulse: [id, shift, lorentz]
+    chain: [id, shift]
+training:
+  epochs: 400
+  batch_tasks: 4
+  contexts: 12
+  queries: 24
+  lr: 0.002
+  inner_steps: 6
+  inner_lr: 0.15
+  inner_samples: 8
+  query_particles: 12
+  validate_every: 20
+  validation_episodes: 8
+  gp_epochs: 400
+inference:
+  steps: 40
+  lr: 0.15
+  samples: 16
+  particles: 32
+evaluation:
+  pool_points: 97
+  integration_points: 48
+  test_points: 193
+  initial_queries: 5
+  additional_queries: 15
+  exploration: 0.15
+  acquisition: fantasy
+  fantasies: 32
+

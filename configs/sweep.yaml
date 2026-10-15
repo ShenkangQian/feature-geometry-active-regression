@@ -1,0 +1,58 @@
+# Single-variable mechanism sweeps (pulse family only). Predictions for this
+# configuration were written to PREDICTIONS.md before it was first executed.
+# shift_r<r>: both peaks at +-(.52 + r*0.10), width 0.10; r = translation
+#             beyond the training centre range in units of peak width.
+# width_s<s>: id centres, id widths multiplied by s.
+seeds: [7, 19, 31, 43, 59]
+families: [pulse]
+methods: [fixed, full, position, width, point, linearized, linearized_prior, gp, gp_basis,
+          oracle_z, full_cheap, full_rich, random, fixed_random, gp_random]
+threads: 6
+noise_std: 0.035
+model:
+  hidden: 12
+  position_dim: 2
+  width_dim: 2
+data:
+  train_tasks: 32
+  validation_tasks: 6
+  test_tasks: 12
+  groups:
+    pulse: [shift_r0, shift_r0.5, shift_r1, shift_r1.5, shift_r2, shift_r3, shift_r4,
+            width_s1, width_s0.7, width_s0.5, width_s0.35, width_s0.25]
+training:
+  epochs: 32
+  batch_tasks: 2
+  contexts: 8
+  queries: 10
+  lr: 0.006
+  inner_steps: 3
+  inner_lr: 0.2
+  inner_samples: 3
+  query_particles: 4
+  validate_every: 8
+  validation_episodes: 3
+  gp_epochs: 40
+  calibration_contexts: [4, 6, 8, 10]
+  calibration_grid: [1.0, 1.25, 1.5, 1.75, 2.0, 2.5, 3.0, 4.0]
+inference:
+  steps: 10
+  lr: 0.2
+  samples: 5
+  particles: 8
+inference_variants:
+  full_cheap: {steps: 3, lr: 0.2, samples: 2, particles: 4}
+  full_rich: {steps: 40, lr: 0.2, samples: 8, particles: 32}
+oracle:
+  restarts: 4
+  steps: 150
+  lr: 0.1
+evaluation:
+  pool_points: 49
+  integration_points: 24
+  test_points: 97
+  initial_queries: 3
+  additional_queries: 7
+  exploration: 0.2
+  acquisition: moment
+  fantasies: 16
