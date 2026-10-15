@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geometa-active"
+version = "0.1.0"
+description = "Nonlinear geometric posterior adaptation for active function regression"
+requires-python = ">=3.10"
+dependencies = ["numpy>=2.0", "scipy>=1.11", "torch>=2.2", "matplotlib>=3.8", "PyYAML>=6.0"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.scripts]
+geometa = "geometa.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
