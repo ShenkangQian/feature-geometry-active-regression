@@ -1,0 +1,86 @@
+[
+  {
+    "task_id": "chain:test:id:0:seed7",
+    "modal_direct_max_abs": 2.2844710385782434e-14,
+    "max_residual": 2.1055836379728988e-15,
+    "min_mass": 0.8345687020153822,
+    "min_eigenvalue": 0.12428612269281454
+  },
+  {
+    "task_id": "chain:test:id:1:seed7",
+    "modal_direct_max_abs": 2.0497074469016526e-14,
+    "max_residual": 9.668687140764233e-16,
+    "min_mass": 0.8982475415944852,
+    "min_eigenvalue": 0.12162131173562414
+  },
+  {
+    "task_id": "chain:test:id:2:seed7",
+    "modal_direct_max_abs": 1.8316997672976092e-14,
+    "max_residual": 1.3710874000188256e-15,
+    "min_mass": 0.8363732568294593,
+    "min_eigenvalue": 0.11003578591741738
+  },
+  {
+    "task_id": "chain:test:shift:0:seed7",
+    "modal_direct_max_abs": 1.0064066084207838e-14,
+    "max_residual": 1.1568796272361405e-15,
+    "min_mass": 0.8641064984193675,
+    "min_eigenvalue": 0.08768529111325324
+  },
+  {
+    "task_id": "chain:test:shift:1:seed7",
+    "modal_direct_max_abs": 6.044223817732996e-14,
+    "max_residual": 1.86491810147602e-15,
+    "min_mass": 0.8680909343735216,
+    "min_eigenvalue": 0.10766129399193915
+  },
+  {
+    "task_id": "chain:test:shift:2:seed7",
+    "modal_direct_max_abs": 4.086827316610267e-14,
+    "max_residual": 2.423225096867198e-15,
+    "min_mass": 0.8076244380135624,
+    "min_eigenvalue": 0.1147399084186441
+  },
+  {
+    "task_id": "chain:test:id:0:seed19",
+    "modal_direct_max_abs": 9.550499576785473e-15,
+    "max_residual": 1.2369141760652445e-15,
+    "min_mass": 0.8977928412787354,
+    "min_eigenvalue": 0.12128616283657755
+  },
+  {
+    "task_id": "chain:test:id:1:seed19",
+    "modal_direct_max_abs": 8.85611656897356e-15,
+    "max_residual": 1.731371353541011e-15,
+    "min_mass": 0.8502452620525742,
+    "min_eigenvalue": 0.10308240920752458
+  },
+  {
+    "task_id": "chain:test:id:2:seed19",
+    "modal_direct_max_abs": 8.365543382977868e-14,
+    "max_residual": 1.3333029368169917e-15,
+    "min_mass": 0.8601586087418044,
+    "min_eigenvalue": 0.11323726223754173
+  },
+  {
+    "task_id": "chain:test:shift:0:seed19",
+    "modal_direct_max_abs": 4.311326371230794e-14,
+    "max_residual": 3.8796035652673224e-15,
+    "min_mass": 0.8349954425332675,
+    "min_eigenvalue": 0.1071944380644096
+  },
+  {
+    "task_id": "chain:test:shift:1:seed19",
+    "modal_direct_max_abs": 4.8405723873656825e-14,
+    "max_residual": 1.7274703961301201e-15,
+    "min_mass": 0.8230084004698675,
+    "min_eigenvalue": 0.09977320508769227
+  },
+  {
+    "task_id": "chain:test:shift:2:seed19",
+    "modal_direct_max_abs": 5.756739235742288e-14,
+    "max_residual": 2.9663676007909523e-15,
+    "min_mass": 0.8122777572346973,
+    "min_eigenvalue": 0.10675529167651247
+  }
+]
